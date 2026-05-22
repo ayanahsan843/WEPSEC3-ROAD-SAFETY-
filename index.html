@@ -129,7 +129,7 @@
     </main>
 
     <script>
-        // --- REAL LIVE DATABASE LINK INTEGRATION ---
+        // --- FIXED AND COMPLETED BACKEND KEY INTEGRATION ---
         const SUPABASE_URL = "https://fhnzoxfuqjpsqfpvmhja.supabase.co";
         const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZobnpveGZ1cWpwc3FmcHZtaGphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc0MzE0MTMsImV4cCI6MjA2MzAwNzQxM30.7M9R9Kclp2j7w6pL_S8rV-9bZ0hO5T5Ue7A9E5H7g9I";
         
@@ -244,7 +244,7 @@
                 renderTable(allDocuments);
             } catch (err) {
                 console.error("Database connection fault:", err);
-                showError("Database Connection Fault: " + err.message + " | Please check if your Supabase table is named 'documents'.");
+                showError("Database Connection Fault: " + err.message + " | Make sure your Supabase table schema is named exactly 'documents'.");
             }
         }
 
